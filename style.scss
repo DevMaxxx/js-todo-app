@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: whitesmoke;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 768px;
+  margin: auto;
+  h1 {
+    text-align: center;
+    color: #ead7d7;
+    font-size: 4em;
+  }
+}
+.papper {
+  background-color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgb(158, 158, 158);
+  border: none;
+  margin: 0;
+}
+.new__input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 1.5em;
+  border: none;
+  margin-bottom: 10px;
+}
+.task {
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 30px auto 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:hover {
+    .task__delete {
+      display: inline;
+    }
+  }
+  &.completed {
+    .task__text {
+      text-decoration: line-through;
+      color: gray;
+    }
+  }
+  .task__text{
+      text-decoration: none;
+  }
+  &.hidden{
+      display: none;
+  }
+}
+.task__body {
+  &.edited {
+    .task__text__input {
+      display: inline;
+    }
+    .task__text {
+      display: none;
+    }
+  }
+  .task__text__input {
+    display: none;
+  }
+  .task__text{
+      display: inline;
+  }
+}
+.task__text {
+  width: 100%;
+  margin: 0;
+}
+.task__delete {
+  width: 15px;
+  height: 15px;
+  display: none;
+  border-radius: 7px;
+  &:hover {
+    background-color: rgb(255, 88, 88);
+  }
+  margin: auto;
+}
+.task__toggle {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+.task__text__input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

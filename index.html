@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ToDoApp</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>TODOS</h1>
+        <div class="papper">
+            <input type="text" class="new__input" placeholder="What needs to be done?" id="newTaskInput">
+            <div class="controls">
+                <p class="item__count" id="itemCount">0 item left</p>
+                <div>
+                    <button class="papper" id="allBtn">All</button>
+                    <button class="papper" id="activeBtn">Active</button>
+                    <button class="papper" id="completedBtn">Completed</button>
+                </div>
+                <button class="papper clear" id="clearBtn">Clear completed</button>
+            </div>
+            <div id="list"></div>
+        </div>
+        <script src="/app.js"></script>
+</body>
+
+</html>
